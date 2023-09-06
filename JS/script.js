@@ -44,7 +44,7 @@ const condition = result => {
     } else if(result >= 18.5 && result <= 24.9) {
         info = 'Peso normal'
     } else if(result > 24.9 && result <= 30) {
-        info = 'Peso normal'
+        info = 'Acima do Peso'
     } else {
         info = 'Obesidade'
     }
