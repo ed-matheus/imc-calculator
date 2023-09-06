@@ -6,6 +6,8 @@ const submit = document.querySelector('#submit');
 const imcResult = document.querySelector('#IMC h1');
 const idealWeightElement = document.querySelector('#idealWeight h1');
 const imcInfo = document.querySelector('#imcInfo');
+const genderMale = document.querySelector('#man')
+const genderFem = document.querySelector('#woman')
 
 // Envia os dados preenchidos
 const submitData = () => {
@@ -85,3 +87,18 @@ const idealWeightCalc = height => {
     return idealWeightInfo
 
 }
+
+// Eventos dos botões de gênero
+genderMale.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    genderFem.setAttribute("style", "box-shadow: none; background-color: #cccccc;")
+    genderMale.removeAttribute("style")
+})
+
+genderFem.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    genderMale.setAttribute("style", "box-shadow: none; background-color: #cccccc;")
+    genderFem.removeAttribute("style")
+})
